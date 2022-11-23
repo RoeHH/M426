@@ -1,0 +1,1 @@
+To run this example use ``deno run run.ts`` or go to https://replit.com/@RoeHH/Decorator-Example?v=1 and press run this will run.ts
