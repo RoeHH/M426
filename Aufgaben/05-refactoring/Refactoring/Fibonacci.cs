@@ -4,14 +4,15 @@ public class Fibonacci
 {
     public static int Fib(int n)
     {
-        if (n < 0)
+        //Loop that calculates the Fibonacci number
+        int a = 0;
+        int b = 1;
+        for (int i = 0; i < n; i++)
         {
-            throw new ArgumentException("Fibonacci undefined for negative numbers");
+            int temp = a;
+            a = b;
+            b = temp + b;
         }
-        if (n == 0 || n == 1)
-        {
-            return n;
-        }
-        return Fib(n - 2) + Fib(n - 1);
+        return a;
     }
 }
